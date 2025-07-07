@@ -1,69 +1,81 @@
 # 1.1 Сравнение моделей разной глубины
 В терминале:
-Running experiment with 1 layers...
-Training time for 1 layers: 12.13 seconds
-Final Train Accuracy: 0.6562
-Final Test Accuracy: 0.6600
 
-Running experiment with 2 layers...
-Training time for 2 layers: 2.39 seconds
-Final Train Accuracy: 0.9750
-Final Test Accuracy: 0.8225
+--Running experiment with 1 layers...
+--Training time for 1 layers: 12.13 seconds
+--Final Train Accuracy: 0.6562
+--Final Test Accuracy: 0.6600
 
-Running experiment with 3 layers...
-Training time for 3 layers: 3.07 seconds
-Final Train Accuracy: 1.0000
-Final Test Accuracy: 0.8600
+--Running experiment with 2 layers...
+--Training time for 2 layers: 2.39 seconds
+--Final Train Accuracy: 0.9750
+--Final Test Accuracy: 0.8225
 
-Running experiment with 5 layers...
-Training time for 5 layers: 3.64 seconds
-Final Train Accuracy: 0.9600
-Final Test Accuracy: 0.8375
+--Running experiment with 3 layers...
+--Training time for 3 layers: 3.07 seconds
+--Final Train Accuracy: 1.0000
+--Final Test Accuracy: 0.8600
 
-Running experiment with 7 layers...
-Training time for 7 layers: 4.44 seconds
-Final Train Accuracy: 0.9725
-Final Test Accuracy: 0.8325
+--Running experiment with 5 layers...
+--Training time for 5 layers: 3.64 seconds
+--Final Train Accuracy: 0.9600
+--Final Test Accuracy: 0.8375
+
+--Running experiment with 7 layers...
+--Training time for 7 layers: 4.44 seconds
+--Final Train Accuracy: 0.9725
+--Final Test Accuracy: 0.8325
 
 
 # 1.2 Анализ переобучения
 На CPU решение в файле + изображения в plots. В терминале:
 Анализ переобучения:
-Переобучение: глубина 2, эпоха 9 (train=0.604, test=0.498)
-Переобучение: глубина 3, эпоха 8 (train=0.628, test=0.518)
-Переобучение: глубина 5, эпоха 7 (train=0.619, test=0.516)
-Переобучение: глубина 7, эпоха 8 (train=0.628, test=0.528)
+
+--Переобучение: глубина 2, эпоха 9 (train=0.604, test=0.498)
+--Переобучение: глубина 3, эпоха 8 (train=0.628, test=0.518)
+--Переобучение: глубина 5, эпоха 7 (train=0.619, test=0.516)
+--Переобучение: глубина 7, эпоха 8 (train=0.628, test=0.528)
+
 Глубина 1 итог тест acc: 0.3441
 Глубина 2 итог тест acc: 0.4973
 Глубина 3 итог тест acc: 0.5212
 Глубина 5 итог тест acc: 0.5321
 Глубина 7 итог тест acc: 0.5385
+
 Лучший depth без рег: 7 (acc=0.5385)
+
 Глубина 1 с рег итог acc: 0.3179
 Глубина 2 с рег итог acc: 0.5582
 Глубина 3 с рег итог acc: 0.5797
 Глубина 5 с рег итог acc: 0.5754
 Глубина 7 с рег итог acc: 0.5726
+
 Лучший depth с рег: 3 (acc=0.5797)
 
 
 На GPU решение через google colab, код тот же, результат:
+
 Анализ переобучения:
-Переобучение: глубина 2, эпоха 9 (train=0.604, test=0.477)
-Переобучение: глубина 3, эпоха 7 (train=0.617, test=0.515)
-Переобучение: глубина 5, эпоха 8 (train=0.640, test=0.536)
-Переобучение: глубина 7, эпоха 9 (train=0.649, test=0.534)
+
+--Переобучение: глубина 2, эпоха 9 (train=0.604, test=0.477)
+--Переобучение: глубина 3, эпоха 7 (train=0.617, test=0.515)
+--Переобучение: глубина 5, эпоха 8 (train=0.640, test=0.536)
+--Переобучение: глубина 7, эпоха 9 (train=0.649, test=0.534)
+
 Глубина 1 итог тест acc: 0.3469
 Глубина 2 итог тест acc: 0.5134
 Глубина 3 итог тест acc: 0.5157
 Глубина 5 итог тест acc: 0.5302
 Глубина 7 итог тест acc: 0.5326
+
 Лучший depth без рег: 7 (acc=0.5326)
+
 Глубина 1 с рег итог acc: 0.3309
 Глубина 2 с рег итог acc: 0.5541
 Глубина 3 с рег итог acc: 0.5820
 Глубина 5 с рег итог acc: 0.5795
 Глубина 7 с рег итог acc: 0.5749
+
 Лучший depth с рег: 3 (acc=0.5820)
 
 В plots есть файл под названием "ПримерГрафикаНа_GPU_МожноСравнитьС_Ч7", это скрин одного из графиков на GPU (Tesla T4). Графики примерно похожи, но где-то он более гладкий, а где-то более резкий в углах. Например, если у CPU более гладкий график функции Test acc, то у GPU он более резкий, как ломаная, и наоборот. Интересно и то, что один и тот же код дал чуть-чуть разный результат, начиная с сотых.
