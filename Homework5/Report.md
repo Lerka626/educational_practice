@@ -31,26 +31,31 @@
 Выбраны классы: ['Гароу', 'Генос', 'Сайтама', 'Соник', 'Татсумаки']
 
 Класс: Гароу
-Для RandomBlur нет аналога в extra_augs;
-Для RandomPerspective нет аналога в extra_augs;
-Для RandomBrightnessContrast нет аналога в extra_augs;
+
+Для RandomBlur нет аналога в extra_augs
+Для RandomPerspective нет аналога в extra_augs
+Для RandomBrightnessContrast нет аналога в extra_augs
 
 Класс: Генос
+
 Для RandomBlur нет аналога в extra_augs
 Для RandomPerspective нет аналога в extra_augs
 Для RandomBrightnessContrast нет аналога в extra_augs
 
 Класс: Сайтама
+
 Для RandomBlur нет аналога в extra_augs
 Для RandomPerspective нет аналога в extra_augs
 Для RandomBrightnessContrast нет аналога в extra_augs
 
 Класс: Соник
+
 Для RandomBlur нет аналога в extra_augs
 Для RandomPerspective нет аналога в extra_augs
 Для RandomBrightnessContrast нет аналога в extra_augs
 
 Класс: Татсумаки
+
 Для RandomBlur нет аналога в extra_augs
 Для RandomPerspective нет аналога в extra_augs
 Для RandomBrightnessContrast нет аналога в extra_augs
@@ -79,14 +84,17 @@
 # Task4
 
 Применение конфигурации: light
+
 Аугментации в пайплайне: ['RandomHorizontalFlip']
 Результаты конфигурации 'light' сохранены в results\augmented_light
 
 Применение конфигурации: medium
+
 Аугментации в пайплайне: ['RandomHorizontalFlip', 'RandomCrop', 'ColorJitter']
 Результаты конфигурации 'medium' сохранены в results\augmented_medium
 
 Применение конфигурации: heavy
+
 Аугментации в пайплайне: ['RandomHorizontalFlip', 'RandomCrop', 'ColorJitter', 'RandomRotation', 'RandomGrayscale']
 Результаты конфигурации 'heavy' сохранены в results\augmented_heavy
 
