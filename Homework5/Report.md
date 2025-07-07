@@ -33,31 +33,41 @@
 Класс: Гароу
 
 Для RandomBlur нет аналога в extra_augs
+
 Для RandomPerspective нет аналога в extra_augs
+
 Для RandomBrightnessContrast нет аналога в extra_augs
 
 Класс: Генос
 
 Для RandomBlur нет аналога в extra_augs
+
 Для RandomPerspective нет аналога в extra_augs
+
 Для RandomBrightnessContrast нет аналога в extra_augs
 
 Класс: Сайтама
 
 Для RandomBlur нет аналога в extra_augs
+
 Для RandomPerspective нет аналога в extra_augs
+
 Для RandomBrightnessContrast нет аналога в extra_augs
 
 Класс: Соник
 
 Для RandomBlur нет аналога в extra_augs
+
 Для RandomPerspective нет аналога в extra_augs
+
 Для RandomBrightnessContrast нет аналога в extra_augs
 
 Класс: Татсумаки
 
 Для RandomBlur нет аналога в extra_augs
+
 Для RandomPerspective нет аналога в extra_augs
+
 Для RandomBrightnessContrast нет аналога в extra_augs
 
 Вывод: Для каждого класса были проверены три типа аугментаций (RandomBlur, RandomPerspective, RandomBrightnessContrast), но все они отсутствуют в дополнительных аугментациях 
