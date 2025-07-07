@@ -31,9 +31,9 @@
 Выбраны классы: ['Гароу', 'Генос', 'Сайтама', 'Соник', 'Татсумаки']
 
 Класс: Гароу
-Для RandomBlur нет аналога в extra_augs
-Для RandomPerspective нет аналога в extra_augs
-Для RandomBrightnessContrast нет аналога в extra_augs
+Для RandomBlur нет аналога в extra_augs;
+Для RandomPerspective нет аналога в extra_augs;
+Для RandomBrightnessContrast нет аналога в extra_augs;
 
 Класс: Генос
 Для RandomBlur нет аналога в extra_augs
